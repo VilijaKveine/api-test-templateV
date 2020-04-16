@@ -22,7 +22,22 @@
   exports.randomEmail = function () {
     return this.randomString(20, 'zxcvbnmlkjhgfdsaqwertyuiop0987654321') + '@gmail.com';
   }
+   /**
+   * Returns new random invalid email
+   */
+  exports.randomInvalidEmail = function () {
+    return this.randomString(20, 'zxcvbnmlkjhgfdsaqwertyuiop0987654321') + '@gmail.';
+  };
+  /**
+   * Returns selected random country_code_iso
+   */
+  exports.randomCountryCodeIso = function () {
 
+   let countryCodeIso = ["LT", "LV", "GB", "US", "RU", "DE", "EE", "FR", "IT", "NO", "ES", "AF","AX","AL","DZ","AS","AD","AO", "AI", "AQ"," AG", "AR", "AM", "AW", "AU" ];
+ 
+   let randomIso = countryCodeIso[Math.floor(Math.random() * countryCodeIso.length)];
+   return randomIso;
+  };
   /**
    * Get date stamp.
    * @return {date} current date stamp.
