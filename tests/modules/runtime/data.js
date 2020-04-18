@@ -4,17 +4,18 @@ let utils = require('./utils');
   // define global data and default values - subject to change during runtime
   let data = {
     global: {
-      Authorization: 'Bearer-authorization-token'
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODg0Mjg5OTMsImlhdCI6MTU4NTgzNjk5MywibmJmIjoxNTg1ODM2OTkzLCJpZCI6NjYyNiwiY2lkIjo2NjQ5MSwiZGV2X2lkIjoic3RyaW5nIn0.ISAgQTTBM2qzN4mUXka3qL3S-qNVdQ0AdtQqCVm3VBc ',
+      newparam: "erwyrgkr"
     },
-    pm: {
-      id: null,
-      email: utils.randomEmail(),
-      first_name: null,
-      last_name: null,
-      address: null,
-      date_stamp: utils.getDateStamp(),
-      time_stamp: utils.getTimeStamp(),
-      string: utils.randomString(256, 'ĄČĘĖĮŠŲŪŽąčęėįšųūžzxcvbnmlkjhgfdsaqwertyuiop`1234567890-=~!@#$%^&*()_+[]\;\',./<>?:{}|\"'),
+    user: {
+      address: "ggngggg",
+      country_code_iso: "LT",
+      email: "email@email.com",
+      first_name: "pavasaris",
+      last_name: "vasaraitis",
+      country_code: "370",
+      device_id: "dsfafaf",
+      phone_number: "64846902"
     }
   };
   exports.getDefaultEmptyValue = function () {
